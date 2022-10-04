@@ -385,6 +385,10 @@ input[type=submit]:hover {
 
     }
 
+    .nav-box {
+        border: none;
+    }
+
     .news-heading {
         border-top: 2px solid #FFD639;
         border-bottom: 2px solid #FFD639;
