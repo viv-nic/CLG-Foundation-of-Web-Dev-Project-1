@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesp1.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>PROJECT 1: Fashion news and trend | Moi Matter</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="heading">
+            <h1> <span onclick="colorPop()" class="company-logo">M<sup>2</sup></span> </h1>
+        </div>
+
+        <div class="company-name">
+            <h6>Moi Matter</h6>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a class="nav-box" href="index.html">HOME</a></li>
+                    <li><a class="nav-box" href="about.html">ABOUT</a></li>
+                    <li><a class="nav-box" href="contact.html">CONTACT US</a></li>
+                    <li><a class="nav-box" href="subscription.html">SUBSCRIBE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+
+        <div class="wrapper">
+            <h3 ondblclick="signupColor()" onmouseover="highlightSignupWord()" onmouseout="unhighlightSignup()"
+                class="signup-sign">Sign up with us!</h3>
+            </br>
+            <form class="subform" action="https://www.formbackend.com/f/1bb02b0feec1bf9e" method="POST">
+                <div class="field">
+                    <label for="full name">
+                        What is your name?
+                    </label>
+                    <input type="text" id="full name" name="name" placeholder="Full Name">
+                </div>
+                </br>
+                </br>
+                <div class="field">
+                    <label for="email">
+                        Your Email address?
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                </div>
+                </br>
+                </br>
+
+                <div class="field">
+                    <label for="gender">
+                        Gender:
+                    </label>
+                    <select onChange="dropDownColor()" id="gender">
+                        <option value="">Select one</option>
+                        <option value="female">She/Her</option>
+                        <option value="male">He/His</option>
+                        <option value="others">Others</option>
+                        <option value="not sure">Not sure</option>
+                    </select>
+                </div>
+                </br>
+
+                <div class="preselect-field">
+
+                    <h4>How often do you want to hear from us?</h4>
+                    <input type="radio" name="when" id="week" value="weekly">
+                    <label for="week">Weekly</label>
+
+                    <input type="radio" name="when" id="month" value="monthly">
+                    <label for="month">Monthly</label>
+                </div>
+
+                </br>
+
+                <div class="preselect-field">
+                    <h4>Would you like to be part of the following...?</h4>
+                    <input type="checkbox" name="monthly draw" id="promotion" value="promotion">
+                    <label for="promotion"> Monthly draw</label></br>
+
+                    <input type="checkbox" name="promotional news" id="promotion" value="promotion">
+                    <label for="promotion"> Receive other promotional news from M<sup>2</sup></label><br>
+
+                    <input type="checkbox" name="no" id="promotion" value="promotion">
+                    <label for="promotion"> No</label>
+                </div>
+
+                </br>
+
+                <div class="field">
+                    <h4>To win a brand new Ipad...</h4>
+                    <label for="ipad-draw">
+                        Tell us what you love about Moi Matter in less than 50 words.
+                    </label></br>
+                    <textarea id="ipad-draw">I love Moi Matter because...</textarea>
+                </div>
+
+
+
+                <input type="submit" value="sign up">
+
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+
+    <footer>
+        <span> Copyright 2022, M<sup>2</sup> @ MOI MATTER. All rights reserved.</span>
+
+    </footer>
+
+    <script>
+
+        function colorPop() {
+            let highlightHeading = document.querySelector('.company-logo');
+            console.log(highlightHeading)
+            highlightHeading.style.color = "#FFA3AF";
+            highlightHeading.style.backgroundColor = "#007CBE";
+
+        }
+
+        function dropDownColor() {
+            let highlightDropDown = document.querySelector('select');
+            console.log(highlightDropDown);
+            highlightDropDown.style.backgroundColor = "#FFD639"
+        }
+
+        function signupColor() {
+            let highlightSignup = document.querySelector('.signup-sign');
+            console.log(highlightSignup);
+            highlightSignup.style.backgroundColor = "#FFD639";
+            highlightSignup.style.color = "#007CBE";
+        }
+
+        function highlightSignupWord() {
+            let highlightSignupWord = document.querySelector('.signup-sign');
+            console.log(highlightSignupWord);
+            highlightSignupWord.style.color = "#00AF54";
+        }
+
+        function unhighlightSignup() {
+            let unhighlightSignup = document.querySelector('.signup-sign');
+            console.log(unhighlightSignup);
+            unhighlightSignup.style.color = "black";
+            unhighlightSignup.style.backgroundColor = "white";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

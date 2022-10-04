@@ -1,0 +1,427 @@
+#heading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.company-logo {
+    border-left: 2px dotted black;
+    border-bottom: 3px double black;
+    padding-bottom: 0px;
+    padding-left: 8px;
+
+}
+
+
+
+.company-name {
+    text-align: center;
+    margin-left: 110px;
+    margin-top: -60px;
+    margin-bottom: 70px;
+}
+
+.news-heading {
+    padding-left: 20px;
+    color: black;
+
+}
+
+
+
+.nav ul {
+    list-style: none;
+    height: 60px;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+nav a:hover {
+    color: #e842ab;
+}
+
+.nav-box:hover {
+    border: 2px solid #e842ab;
+    padding: 0.5em 1.5em;
+}
+
+.company-logo:hover {
+    color: #00AF54;
+}
+
+
+.company-name:hover {
+    color: #FFA3AF
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+
+/* Create 3 equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#main {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+article {
+    background-color: #f2e9e4;
+    padding: 20px;
+
+}
+
+
+.localarticles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.overseasarticles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.news-heading:hover,
+.trend-header:hover {
+    color: #007CBE;
+
+}
+
+
+
+#extra {
+    border: 5px solid #e842ab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+
+.trend-header {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.currenttrend {
+    display: flex;
+
+}
+
+
+.image-portrait {
+    width: 50%;
+    height: 300px;
+
+}
+
+.image-landscape {
+    padding: 25px 0px;
+    width: 80%;
+    height: 250px;
+}
+
+
+.authors li {
+    list-style: none;
+    margin-left: -40px;
+    font-weight: bold;
+
+}
+
+.authors li a {
+    font-style: italic;
+    color: grey;
+}
+
+.authors a:hover,
+.about-heading:hover,
+.contact-heading:hover {
+    color: #00AF54;
+}
+
+#container {
+
+    margin: auto;
+    width: 70%;
+
+
+}
+
+.wrapper {
+    height: 55em;
+    border: 5px solid #fca311;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 1em;
+}
+
+.container {
+    width: 70%;
+    border: 5px solid #fca311;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.contact-heading,
+.about-heading {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.contact-subheading,
+.about-subheading {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.call-link a {
+    text-decoration: none;
+    color: #e842ab;
+}
+
+.call-link a:hover {
+    color: #007bb5;
+}
+
+.email-link a {
+    color: #00AF54;
+    text-decoration: none;
+}
+
+.email-link a:hover {
+    color: #e842ab;
+}
+
+
+.signup-sign {
+    font-size: 2.5em;
+    height: 1.5em;
+    margin: auto 2em;
+    font-style: italic;
+    padding: 1em;
+    color: black;
+
+
+
+}
+
+
+
+.field label {
+    margin-right: 1em;
+    font-weight: bold;
+
+
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    display: block;
+    margin: 0.5em 0 0.5em;
+    font-size: 1em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.field input:hover,
+.field textarea:hover,
+.field select:hover {
+    background-color: #FFD639;
+}
+
+textarea {
+    min-height: 10em;
+    width: 60%;
+}
+
+.preselect-field {
+    margin: 0.5em 0 0;
+}
+
+.preselect-field input {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    margin: 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FFA3AF;
+    color: #007CBE;
+    font-size: 1.5em;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+
+}
+
+input[type=submit]:hover {
+    background-color: #FFD639;
+}
+
+/* Fixed/sticky icon bar (vertically aligned % from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 77%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.google {
+    background: #dd4b39;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+    #main,
+    #extra,
+    .currenttrend {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .company-logo {
+        color: #00AF54;
+    }
+
+    .company-name {
+        color: #e842ab;
+    }
+
+    nav a {
+        font-size: 16px;
+
+    }
+
+    .news-heading {
+        border-top: 2px solid #FFD639;
+        border-bottom: 2px solid #FFD639;
+        padding: 0.5em 2em;
+
+    }
+
+    .trend-header {
+        border-bottom: 2px solid #e842ab;
+        padding: 0.5em 2em;
+
+    }
+
+    article {
+        background: white;
+    }
+
+    .signup-sign {
+        font-size: 1.2em;
+        padding: 0;
+        color: #e842ab;
+        font-weight: bold;
+
+    }
+
+    input[type=submit] {
+        font-size: 0.5em;
+        font-weight: bold;
+        padding: none;
+
+
+
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
