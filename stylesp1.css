@@ -422,3 +422,24 @@ input[type=submit]:hover {
         flex: 50%;
         max-width: 50%;
     }
+    
+ @media screen and (max-width: 350px) {
+        nav a {
+            font-size: 0.6em;   
+        }
+
+        .signup-sign {
+            font-size: 0.8em;
+            color: #e842ab;
+            font-weight: bold;
+        }
+
+        form {
+            font-size: 0.9em;
+        }
+
+        .icon-bar a {
+            padding: 0.5em;
+            font-size: 1.2em;
+        }
+    } 
