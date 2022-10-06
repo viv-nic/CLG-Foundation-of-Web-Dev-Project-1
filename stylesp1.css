@@ -423,7 +423,7 @@ input[type=submit]:hover {
         max-width: 50%;
     }
     
- @media screen and (max-width: 350px) {
+ @media screen and (max-width: 400px) {
         nav a {
             font-size: 0.6em;   
         }
