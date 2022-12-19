@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesp1.css">
+    <link rel="stylesheet" type="text/css" href="stylesp1.css" defer>
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,21 +17,63 @@
     <header>
         <div id="heading">
             <h1> <span onclick="colorPop()" class="company-logo">M<sup>2</sup></span> </h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="filter">
+                <defs>
+                 <filter id="shadow">
+                  <feTurbulence type="turbulence" baseFrequency="0.2" numOctaves="100" result="turbulence" />
+                  <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R" yChannelSelector="G" result="grainyShadow1" />
+                  <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R" yChannelSelector="G" result="grainyShadow2" />
+                  <feColorMatrix in="grainyShadow1" result="colorCorrected1" type="matrix" values="1 0 0 -1 0
+                                 0 0 0 -1 0
+                                 0 0 0 -1 0
+                                 0 0 0 1 0" />
+                  <feColorMatrix in="grainyShadow2" result="colorCorrected2" type="matrix" values="1 0 0 -1 0
+                                 0 0 0 -1 0
+                                 0 0 0 -1 0
+                                 0 0 0 1 0" /><feMerge>
+                   <feMergeNode in="colorCorrected1" />
+                   <feMergeNode in="colorCorrected2" />
+                   <feMergeNode in="SourceGraphic" />
+                  </feMerge></filter>
+                </defs>
+               </svg>
         </div>
 
-        <div class="company-name">
+        <div id="company-name">
             <h6>Moi Matter</h6>
         </div>
 
         <div class="nav">
-            <nav>
-                <ul>
-                    <li><a class="nav-box" href="index.html">HOME</a></li>
-                    <li><a class="nav-box" href="about.html">ABOUT</a></li>
-                    <li><a class="nav-box" href="contact.html">CONTACT US</a></li>
-                    <li><a class="nav-box" href="subscription.html">SUBSCRIBE</a></li>
-                </ul>
-            </nav>
+            <div class="menutoggle"></div>
+            <ul>
+                <li class="list active" style="--clr:#ffa117;">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#e63946;">
+                    <a href="about.html">
+                        <span class="icon"><ion-icon name="shirt-outline"></ion-icon></span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#06d6a0;">
+                    <a href="contact.html">
+                        <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#ffd166;">
+                    <a href="subscription.html">
+                        <span class="icon"><ion-icon name="pencil-outline"></ion-icon></span>
+                        <span class="text">subscribe</span>
+                    </a>
+                </li>
+            </ul>
+           
+            
         </div>
 
 
@@ -279,19 +321,15 @@
 
     </footer>
 
-    <script>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 
-        function colorPop() {
-            let highlightHeading = document.querySelector('.company-logo');
-            console.log(highlightHeading)
-            highlightHeading.style.color = "#FFA3AF";
-            highlightHeading.style.backgroundColor = "#007CBE";
-
-        }
+       
 
 
 
-    </script>
 
 </body>
 
